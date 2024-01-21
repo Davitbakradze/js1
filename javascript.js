@@ -34,13 +34,10 @@ console.log("my adrss is " + Myadressis);
 
 //მეოტხე დვალება//
 
-if (userInfo[2].age <= 18) {
-    console.log("I am a Teenager")
-};
-
-if (userInfo[0].age >= 18) {
-    console.log("I am a adult")
-};
+if (userInfo[1].age <= 19)
+    console.log("I am teen");
+else
+    console.log("I am an adult");
 
 //მეხუთე დავალება//
 
