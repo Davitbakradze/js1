@@ -1,67 +1,61 @@
-// simple variebles //
+let numbersArray = [1, 2, 3, 4, 5];
+let sum=0;
+numbersArray.forEach(numb => sum += numb);
+console.log(sum);
 
-var name = "Giorgi";
-var age = 25;
-var isStudent = true;
+//second method
 
-let city = "Tbilisi";
-let temperature = 28;
+const sum1 = numbersArray.reduce((acc, val) => acc + val, 0);
 
-const PI = 3.14;
-const MAX_VALUE = 100;
+//third method
 
+const sum2=eval(numbersArray.join("+"));
 
-// simple variebles //
+//result 15//
 
-// math operations //
+//მეორე დავალება//
 
-let x=30;
-let y=15;
-let c=25;
-let z=28;
+let userInfo = [
+    {name:"დავითი", age:25, adress:"თბილისი"},
+    {name:"ანა", age:18, adress:"თბილისი"},
+    {name:"გიორგი", age:20, adress:"თბილისი"},
+]
 
-let n=x+y;
-console.log(n);
-//result 45//
+//მესამე დავალება//
 
-let m=x*y;
-console.log(m);
-//result 450//
+let Mynameis=(userInfo[0].name);
+console.log("My name is " + Mynameis);
 
-let f=z-c;
-console.log(f);
-//result 3//
+let Myageis=(userInfo[0].age);
+console.log("My age is " + Myageis);
 
-let g=z/c;
-console.log(g);
-//result 1.12//
+let Myadressis=(userInfo[0].adress);
+console.log("my adrss is " + Myadressis);
 
-// math operations //
+//მეოტხე დვალება//
 
-//string concatenation//
+if (userInfo[2].age <= 18) {
+    console.log("I am a Teenager")
+};
 
-console.log(name + " is " + age + " years old ")
-//Giorgi is 25 years old//
+if (userInfo[0].age >= 18) {
+    console.log("I am a adult")
+};
 
-let sentence = `${name}  lives in ${city}`;
-console.log(sentence);
-//Giorgi  lives in Tbilisi//
+//მეხუთე დავალება//
 
-//string concatenation//
+let mounthWage = [10000, 55000, 555, 658, 898797];
 
-//Area of a rectangle//
+for (let i = 0; i < 9; i++) {
+    mounthWage = mounthWage + i;
+  }
+  
+  console.log(mounthWage);
 
-let w=7;
-    e=5;
+  //მეექვსე დავალება
 
-let q=w*e;
-console.log(q);
+const daysOfWeek = ["კვირა", "ორშაბათი", "სამშაბათი", "ოთხშაბათი", "ხუთშაბათი", "პარასკევი", "შაბათი"];
+const currentDay = new Date().getDay();
+const dayName = daysOfWeek[currentDay];
 
-//result 35//
-
-//Area of a rectangle//
-
-
-
-
-
+console.log(dayName);
