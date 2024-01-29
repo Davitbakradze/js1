@@ -9,9 +9,9 @@
   </head>
   <body>
     <script>
-      var divElement = document.createElement("div");
+      let divElement = document.createElement("div");
 
-      var pElement = document.createElement("p");
+      let pElement = document.createElement("p");
 
       pElement.innerText = "Hello, World!";
 
@@ -19,12 +19,12 @@
 
       document.body.appendChild(divElement);
 
-      var myArray = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+      let myArray = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
 
-      var ulElement = document.createElement("ul");
+      let ulElement = document.createElement("ul");
 
-      for (var i = 0; i < myArray.length; i++) {
-        var liElement = document.createElement("li");
+      for (let i = 0; i < myArray.length; i++) {
+        let liElement = document.createElement("li");
         liElement.innerText = myArray[i];
         ulElement.appendChild(liElement);
       }
