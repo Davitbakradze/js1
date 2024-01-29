@@ -68,6 +68,11 @@ let consumerInfo = [
   { name: "nicholas", age: 25, address: "New York, NY" },
 ];
 
-let secondElementName = consumerInfo[1].name;
+let secondElement = consumerInfo.find((element, index) => index === 1);
 
-console.log("მეორე ელემენტის სახელია:", secondElementName);
+if (secondElement) {
+  let secondElementName = secondElement.name;
+  console.log("Name of the second element:", secondElementName);
+} else {
+  console.log("Second element not found");
+}
