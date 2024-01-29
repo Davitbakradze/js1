@@ -70,4 +70,4 @@ let consumerInfo = [
 
 let secondElementName = consumerInfo[1].name;
 
-console.log("Name of the second element:", secondElementName);
+console.log("მეორე ელემენტის სახელია:", secondElementName);
